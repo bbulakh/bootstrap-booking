@@ -13,6 +13,7 @@
   <meta name="theme-color" content="#ffffff">
   <title>YOLO.com</title>
   <link rel="stylesheet" href="scss/styles.scss">
+  <script type="module" src="js/main.js"></script>
 </head>
 
 <body>
@@ -140,33 +141,81 @@
 
     <!-- Corousel cards -->
 
-    <section>
-      <div id="carouselExample" class="carousel slide">
+    <section class="container">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
+            <div class="card mx-auto" style="width: 100%;">
+              <img src="https://i.pinimg.com/originals/db/78/cc/db78cc8db7ac6081e1c19a3d24a09a6f.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card mx-auto" style="width: 100%;">
+              <img src="https://i.pinimg.com/originals/db/78/cc/db78cc8db7ac6081e1c19a3d24a09a6f.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
 
           </div>
           <div class="carousel-item">
-
-          </div>
-          <div class="carousel-item">
-
+            <div class="card mx-auto" style="width: 100%;">
+              <img src="https://i.pinimg.com/originals/db/78/cc/db78cc8db7ac6081e1c19a3d24a09a6f.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="sr-only visually-hidden">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <span class="sr-only visually-hidden">Next</span>
+        </a>
       </div>
-
-
-
+     
     </section>
     <!-- /Corousel cards -->
+
+
+
+    <!-- Pros  -->
+    <section class="container">
+
+      <div>
+        <img class="rounded object-fit-cover" style="width: 100%; height: 470px;" src="images/pros-image.jpg" alt="Resort Image">
+      </div>
+
+      <div class="">
+
+        <div>
+          <h2 class="fw-bold my-3">Make Your Perfect Trip With Yolo.com&#33;</h2>
+          <p class="lead fs-6 text-secondary">Book your hotel with us and don't forget to grab an awesome hotel deal to save massive on your stay.</p>
+        </div>
+
+        <div>
+          <i></i>
+          <h3></h3>
+          <p></p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- / Pros  -->
 
   </main>
 
@@ -208,9 +257,6 @@
   </footer>
 
 
-
-
-  <script type="module" src="./js/main.js"></script>
 
 </body>
 
