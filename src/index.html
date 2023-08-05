@@ -12,6 +12,7 @@
   <meta name="msapplication-TileColor" content="#2d89ef">
   <meta name="theme-color" content="#ffffff">
   <title>YOLO.com</title>
+  <link rel="stylesheet" href="scss/custom.scss">
   <link rel="stylesheet" href="scss/styles.scss">
   <script type="module" src="js/main.js"></script>
 </head>
@@ -21,7 +22,7 @@
 
     <!-- Navbar  -->
 
-    <nav class="navbar navbar-expand-sm navbar-light">
+    <nav class="navbar navbar-expand-sm navbar-light bg-primary">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img style="width: 70px" src="/src/images/yolo.svg" alt="Yolo logotype"></a>
         <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
@@ -107,7 +108,7 @@
                   </svg></i>
                 <div style="width: 100%">
                   <label for="location" class="form-label">Date</label>
-                  <input class="form-control py-3" type="date" value="25-05-2023">
+                  <input class="form-control py-3" type="date">
                 </div>
               </div>
 
@@ -246,12 +247,92 @@
 
     <!-- / Pros  -->
 
+    <!-- Popular destiantions  -->
+
+    <section class="container">
+      <h2 class="text-center fw-bold display-4 mt-3 mb-5">Best Destinations</h2>
+
+      <div class="row row-cols-2 g-4">
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/belgrade.jpg" alt="Belgrade Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">Belgrade</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;600</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/barcelona.jpg" alt="Barcelona Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">Barcelona</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;1100</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/new-delhi.jpg" alt="New Delhi Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">New-Delhi</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;500</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/new-york.jpg" alt="New-York Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">New York</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;2000</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/bukharest.jpg" alt="Bukharest Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">Bukharest</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;1000</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/amsterdam.jpg" alt="Amsterdam Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">Amsterdam</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;1600</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/tokyo.jpg" alt="Tolyo Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">Tokyo</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;2500</p>
+          </div>
+        </div>
+
+        <div class="card border-0 bg-transparent text-center">
+          <img class="rounded-circle object-fit-cover w-100 mx-auto" src="images/miami.jpg" alt="Miami Image">
+          <div class="card-body">
+            <h5 class="card-title fs-3 fw-bold"><a class="stretched-link link-dark text-decoration-none" href="#">Miami</a></h5>
+            <p class="fs-6 text-secondary">from &dollar;2600</p>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+    </section>
+
+    <!-- /Popular destiantions  -->
+
 
     <!-- App badges  -->
     <section class="container bg-white">
 
       <div>
-        
+
       </div>
 
 
@@ -260,8 +341,8 @@
       <div class="">
         <h4 class="fw-bold">Download our app</h4>
         <div class="d-flex justify-content-between gap-1">
-          <img src="images/badge-appstore.svg" style="width: 50%" alt="AppStore Badge">
-          <img src="images/badge-googleplay.svg" style="width: 50%" alt="AppStore Badge">
+          <img class="col-6" src="images/badge-appstore.svg" alt="AppStore Badge">
+          <img class="col-6" src="images/badge-googleplay.svg" alt="AppStore Badge">
         </div>
       </div>
       
