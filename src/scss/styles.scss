@@ -1,11 +1,19 @@
+$primary: #0099FF;
+$danger: #FF7F50;
+$success: #00CC66;
+$enable-negative-margins: true;
 
+$position-values: (
+  0: 0,
+  50: 50%,
+  93: 93%,
+  100: 100%
+);
 
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-
-
-
-
-
+.mt-n9 {
+    margin-top: -10rem;
+};
 
