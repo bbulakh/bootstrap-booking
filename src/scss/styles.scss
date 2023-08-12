@@ -1,7 +1,10 @@
+
+
 $primary: #0099FF;
 $danger: #FF7F50;
 $success: #00CC66;
 $enable-negative-margins: true;
+$nav-link-padding-x: 0;
 
 $position-values: (
   0: 0,
@@ -13,7 +16,25 @@ $position-values: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+
+// Negtive margin
 .mt-n9 {
     margin-top: -10rem;
 };
+
+.nav-link-muted {
+  color:  #d8d8d8 !important;
+};
+
+.nav-link-muted:hover {
+  color:  $primary !important;
+};
+
+.h-40px{
+  height: 40px !important;
+}
+
+
+
+
 
