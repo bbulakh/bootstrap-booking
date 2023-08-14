@@ -1,8 +1,7 @@
-
-
-$primary: #0099FF;
-$danger: #FF7F50;
-$success: #00CC66;
+$primary: #0099ff;
+$danger: #ff7f50;
+$success: #00cc66;
+$warning: #FFD700;
 $enable-negative-margins: true;
 $nav-link-padding-x: 0;
 
@@ -10,31 +9,35 @@ $position-values: (
   0: 0,
   50: 50%,
   93: 93%,
-  100: 100%
+  100: 100%,
 );
-
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-
 // Negtive margin
 .mt-n9 {
-    margin-top: -10rem;
-};
+  margin-top: -10rem;
+}
 
 .nav-link-muted {
-  color:  #d8d8d8 !important;
-};
+  color: #d8d8d8 !important;
+}
 
 .nav-link-muted:hover {
-  color:  $primary !important;
-};
+  color: $primary !important;
+}
 
-.h-40px{
+.h-40px {
   height: 40px !important;
 }
 
+.bg-glass {
+  background: rgba(255, 255, 255, 0.29);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(11.9px);
+};
 
-
-
-
+.nav-link{
+  width: fit-content;
+};
