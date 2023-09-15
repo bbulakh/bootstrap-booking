@@ -9,3 +9,4 @@ public
 build
 dist
 .parcel-cache
+coverage
