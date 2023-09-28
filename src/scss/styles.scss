@@ -1,7 +1,7 @@
 $primary: #0099ff;
 $danger: #ff7f50;
 $success: #00cc66;
-$warning: #FFD700;
+$warning: #ffd700;
 $enable-negative-margins: true;
 $nav-link-padding-x: 0;
 
@@ -12,12 +12,18 @@ $position-values: (
   100: 100%,
 );
 
-@import "../../node_modules/bootstrap/scss/bootstrap";
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+);
 
+@import "../../node_modules/bootstrap/scss/bootstrap";
 
 .navbar-toggler:focus {
   border: 0 !important;
-  box-shadow: none !important;  
+  box-shadow: none !important;
 }
 
 // Negtive margin
@@ -36,15 +42,15 @@ $position-values: (
 }
 
 // Margin between sections
-.sm-100{
+.sm-100 {
   margin: 100px auto 0 auto;
-};
+}
 
 // Width
 
 .w-300px {
   width: 300px;
-};
+}
 
 // Height
 .h-40px {
@@ -55,9 +61,9 @@ $position-values: (
 
 .bg-glass {
   backdrop-filter: blur(8px);
-  background-color: rgba(255, 255, 255, .15);
-};
+  background-color: rgba(255, 255, 255, 0.15);
+}
 
-.nav-link{
+.nav-link {
   width: fit-content;
-};
+}
