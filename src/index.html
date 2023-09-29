@@ -11,18 +11,17 @@
     <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta name="theme-color" content="#ffffff" />
     <title>OLO.com</title>
-    <link rel="stylesheet" href="scss/styles.scss" />
     <script type="module" src="js/main.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="scss/styles.scss" />
   </head>
 
   <body class="">
@@ -209,16 +208,22 @@
                       </svg>
                     </i>
                     <div style="width: 100%">
-                      <label
-                        for="location"
-                        class="form-label text-secondary-emphasis"
+                      <label class="form-label text-secondary-emphasis"
                         >Location</label
                       >
-                      <input
-                        class="form-control py-3"
-                        type="text"
-                        placeholder="Select location"
-                      />
+
+                      <select
+                        class="js-example-basic-single col-12 py-3 form-control"
+                        name="state"
+                      >
+                        <option value="AL">Belgrade</option>
+                        <option value="AL">Estonia</option>
+                        <option value="AL">Surgut</option>
+                        <option value="AL">Saint-Petersburg</option>
+                        <option value="AL">Saratov</option>
+                        <option value="AL">Armenia</option>
+                        <option value="WY">Moscow</option>
+                      </select>
                     </div>
                   </div>
 
@@ -1096,14 +1101,14 @@
       <!-- / Logo Section  -->
 
       <!-- Commentary Section  -->
-      <section class="container sm-100">
+      <section class="container sm-100 col-12">
         <div class="splide">
           <div class="splide__track">
             <ul class="splide__list">
               <!-- 1 slide  -->
               <li class="splide__slide">
-                <div class="d-flex flex-column flex-md-row">
-                  <div class="mb-4 col-md-5">
+                <div class="d-flex flex-column flex-md-row gap-md-5">
+                  <div class="mb-4 col-md-5 col-lg-3">
                     <img
                       height="300px"
                       class="col-12 rounded-4 object-fit-cover"
@@ -1112,8 +1117,21 @@
                     />
                   </div>
 
-                  <div class="col-md-7">
-                    <h5 class="fw-light">
+                  <div class="col-md-7 col-lg-9 mb-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      fill="currentColor"
+                      class="bi bi-quote text-primary"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+
+                    <h5 class="fw-light col-lg-10">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Voluptatum sed laborum, minima eligendi soluta corrupti
                       accusamus ad dignissimos provident nihil eius odit, non
@@ -1198,8 +1216,8 @@
               <!-- 2 slide  -->
 
               <li class="splide__slide">
-                <div class="d-flex flex-column flex-md-row">
-                  <div class="mb-4 col-md-5">
+                <div class="d-flex flex-column flex-md-row gap-md-5">
+                  <div class="mb-4 col-md-5 col-lg-3">
                     <img
                       height="300px"
                       class="col-12 rounded-4 object-fit-cover"
@@ -1208,8 +1226,20 @@
                     />
                   </div>
 
-                  <div class="col-md-7">
-                    <h5 class="fw-light">
+                  <div class="col-md-7 col-lg-9">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      fill="currentColor"
+                      class="bi bi-quote text-primary"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+                    <h5 class="fw-light col-lg-10">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Voluptatum sed laborum, minima eligendi soluta corrupti
                       accusamus ad dignissimos provident nihil eius odit, non
@@ -1293,8 +1323,8 @@
 
               <!-- 3 slide  -->
               <li class="splide__slide">
-                <div class="d-flex flex-column flex-md-row">
-                  <div class="mb-4 col-md-5">
+                <div class="d-flex flex-column flex-md-row gap-md-5">
+                  <div class="mb-4 col-md-5 col-lg-3">
                     <img
                       height="300px"
                       class="col-12 rounded-4 object-fit-cover"
@@ -1303,7 +1333,20 @@
                     />
                   </div>
 
-                  <div class="col-md-7">
+                  <div class="col-md-7 col-lg-9">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      fill="currentColor"
+                      class="bi bi-quote text-primary"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+
                     <h5 class="fw-light">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Voluptatum sed laborum, minima eligendi soluta corrupti
@@ -1389,8 +1432,8 @@
               <!-- 4 slide  -->
 
               <li class="splide__slide">
-                <div class="d-flex flex-column flex-md-row">
-                  <div class="mb-4 col-md-5">
+                <div class="d-flex flex-column flex-md-row gap-md-5">
+                  <div class="mb-4 col-md-5 col-lg-3">
                     <img
                       height="300px"
                       class="col-12 rounded-4 object-fit-cover"
@@ -1399,7 +1442,20 @@
                     />
                   </div>
 
-                  <div class="col-md-7">
+                  <div class="col-md-7 col-lg-9">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="50"
+                      height="50"
+                      fill="currentColor"
+                      class="bi bi-quote text-primary"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"
+                      />
+                    </svg>
+
                     <h5 class="fw-light">
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Voluptatum sed laborum, minima eligendi soluta corrupti
@@ -1646,7 +1702,7 @@
 
       <!-- App badges  -->
       <section class="bg-white">
-        <div class="container  items-md-center gap-5 bg-white py-5">
+        <div class="container items-md-center gap-5 bg-white py-5">
           <div class="d-flex flex-column flex-md-row gap-3 py-4">
             <div
               class="d-flex flex-md-column flex-lg-row mx-auto border col-12 col-md-6 rounded p-4"
@@ -2023,6 +2079,16 @@
       </nav>
       <!-- /Mobile nav  -->
     </main>
-    <script></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".js-example-basic-single").select2();
+      });
+    </script>
   </body>
 </html>
