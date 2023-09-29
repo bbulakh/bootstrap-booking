@@ -1,4 +1,5 @@
 import * as bootstrap from 'bootstrap'
+import Splide from '@splidejs/splide';
 
 if (document.querySelector('.splide')) {
     let splide = new Splide(".splide", {
@@ -17,4 +18,6 @@ if (document.querySelector('.splide')) {
     });
   
     splide.mount();
-  }
+  };
+
+ 
