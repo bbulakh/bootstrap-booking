@@ -26,6 +26,10 @@ $container-max-widths: (
   box-shadow: none !important;
 }
 
+.splide__pagination__page.is-active {
+  background: $warning;
+}
+
 // Negtive margin
 .mt-n9 {
   margin-top: -10rem;
